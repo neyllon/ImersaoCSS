@@ -1,0 +1,171 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('../img/bgred.png');
+  background-size: auto 100vw;
+  font-family: 'Montserrat', cursive;
+  font-size: 12px;
+}
+
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* breakpoint */
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header{
+  height: 75vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.bio {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu a{
+  display: block;
+  color: darkred;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+a:hover{
+  color: orange;
+  text-decoration: underline;
+}
+  
+.site-title {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 800;
+  font-style: italic;
+  text-align: center;
+  font-size: 3em;
+}
+
+.site-subtitle {
+  color: white;  
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+ hr {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 8px auto;
+  height: 0;
+  width: 100%;
+  max-height: 0;
+  font-size: 1px;
+  line-height: 0;
+  clear: both;
+  border: none;
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #ffffff;
+}
+
+.foto{
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
+  object-position: 0px 40%;
+  border-radius: 100%;
+}
+  
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+}
+  
+.menu li{
+  list-style: none;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  width:100vw;
+  top: 0;
+}
+
+.img-portfolio {
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+@media (min-width:1200 px){
+  .img-portfolio{
+    width: 15em;
+    height: auto;
+  }
+}
+
+.Portfolio {
+  font-family: 'Montserrat', sans-serif;
+  padding: 2em;
+}
+.Portfolio h2{
+  color: white;
+  margin-bottom: 1.5em;
+}
+
+.Portfolio .grid{
+  display: grid;
+  gap: 2em;
+}
+
+@media (min-width: 600px){
+  .Portfolio .grid{
+      grid-template-columns:repeat(2, 250px);
+      justify-content: center;
+  }
+}
+
+@media (min-width: 890px){
+  .Portfolio .grid{
+      grid-template-columns: repeat(3, 250px);
+      justify-content: center;
+  }
+}
+
+@media (min-width: 1200px){
+  .Portfolio .grid{
+      grid-template-columns: repeat(3, 300px);
+      justify-content: center;
+  }
+}
+.Portfolio figure{
+  text-align: center;
+}
+  
